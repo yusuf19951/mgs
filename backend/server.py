@@ -115,7 +115,8 @@ async def send_message(input: MessageCreate):
             session_id=input.session_id,
             system_message="Sen TürkGPT'sin, Türkçe konuşan yardımsever bir yapay zeka asistanısın. Her zaman kibar, bilgili ve dostça bir şekilde yanıt verirsin."
         )
-        chat.with_model("openai", "gpt-5")
+        # Daha hızlı yanıt için gpt-4o-mini kullan
+        chat.with_model("openai", "gpt-4o-mini")
         
         # Kullanıcı mesajını gönder
         user_message = UserMessage(text=input.content)
