@@ -369,10 +369,19 @@ body {
 
 /* Input Area */
 .input-area {
-  padding: 24px;
+  padding: 24px 24px 16px;
   border-top: 1px solid rgba(148, 163, 184, 0.1);
   background: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(20px);
+}
+
+.footer-credit {
+  text-align: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  font-size: 13px;
+  color: #64748b;
+  border-top: 1px solid rgba(148, 163, 184, 0.05);
 }
 
 .input-container {
