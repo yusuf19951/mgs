@@ -96,6 +96,16 @@ function App() {
 
     const userMessage = inputMessage;
     setInputMessage("");
+    
+    // Kullanıcı mesajını hemen göster
+    const tempUserMsg = {
+      id: Date.now().toString(),
+      session_id: currentSession,
+      role: "user",
+      content: userMessage,
+      timestamp: new Date().toISOString()
+    };
+    setMessages([...messages, tempUserMsg]);
     setLoading(true);
 
     try {
@@ -103,10 +113,14 @@ function App() {
         session_id: currentSession,
         content: userMessage,
       });
-      setMessages([...messages, response.data.user_message, response.data.assistant_message]);
+      
+      // Sadece assistant mesajını ekle (user mesajı zaten gösterildi)
+      setMessages(prev => [...prev, response.data.assistant_message]);
     } catch (error) {
       console.error("Mesaj gönderilemedi:", error);
       toast.error("Mesaj gönderilemedi");
+      // Hata olursa user mesajını geri al
+      setMessages(messages);
     } finally {
       setLoading(false);
     }
