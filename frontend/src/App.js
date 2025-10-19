@@ -245,6 +245,9 @@ function App() {
                   <Send className="icon" />
                 </Button>
               </div>
+              <div className="footer-credit">
+                MaviGlobalSoft tarafından geliştirilmiştir. ( Kadir Tolga Erdoğan )
+              </div>
             </div>
           </>
         ) : (
