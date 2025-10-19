@@ -147,6 +147,11 @@ function App() {
             <PlusCircle className="icon" />
             Yeni Sohbet
           </Button>
+          <div className="developer-badge">
+            <div className="developer-badge-title">Developed by</div>
+            <div className="developer-badge-name">Kadir Tolga Erdoğan</div>
+            <div className="developer-badge-company">MaviGlobalSoft</div>
+          </div>
         </div>
         <ScrollArea className="sessions-list">
           {sessions.map((session) => (
