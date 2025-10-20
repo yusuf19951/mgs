@@ -195,41 +195,23 @@ class TurkGPT:
         
     def get_ai_response(self, user_message):
         try:
-            # Konuşma geçmişine ekle
-            self.conversation_history.append({
-                'role': 'user',
-                'content': user_message
-            })
+            if not self.session_id:
+                self.root.after(0, self.add_system_message, "Oturum hatası. Lütfen uygulamayı yeniden başlatın.")
+                return
             
-            # API çağrısı
-            headers = {
-                'Content-Type': 'application/json',
-                'Authorization': f'Bearer {API_KEY}'
-            }
-            
-            data = {
-                'model': 'gpt-4o-mini',
-                'messages': [
-                    {
-                        'role': 'system',
-                        'content': "Sen TürkGPT'sin, Türkçe konuşan yardımsever bir yapay zeka asistanısın. Her zaman kibar, bilgili ve dostça bir şekilde yanıt verirsin."
-                    }
-                ] + self.conversation_history,
-                'temperature': 0.7,
-                'max_tokens': 1000
-            }
-            
-            response = requests.post(API_URL, headers=headers, json=data, timeout=30)
+            # Backend API çağrısı
+            response = requests.post(
+                f'{API_URL}/chat',
+                json={
+                    'session_id': self.session_id,
+                    'content': user_message
+                },
+                timeout=30
+            )
             
             if response.status_code == 200:
                 result = response.json()
-                assistant_message = result['choices'][0]['message']['content']
-                
-                # Konuşma geçmişine ekle
-                self.conversation_history.append({
-                    'role': 'assistant',
-                    'content': assistant_message
-                })
+                assistant_message = result['assistant_message']['content']
                 
                 # UI'da göster
                 self.root.after(0, self.add_assistant_message, assistant_message)
