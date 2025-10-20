@@ -1,0 +1,88 @@
+==============================================
+TÜRKGPT MASAÜSTÜ UYGULAMASI - EXE YAPMA KILAVUZU
+==============================================
+
+GELİŞTİRİCİ: Kadir Tolga Erdoğan - MaviGlobalSoft
+
+--- WINDOWS İÇİN EXE YAPMA ---
+
+1. GEREKLİ PROGRAMLAR:
+   - Python 3.8 veya üzeri (https://python.org)
+   - PyInstaller kütüphanesi
+
+2. KURULUM ADIMLARI:
+
+   Adım 1: Python'u indirin ve kurun
+   - python.org'dan en son Python sürümünü indirin
+   - Kurulum sırasında "Add Python to PATH" seçeneğini işaretleyin
+
+   Adım 2: Komut İstemi'ni (CMD) açın
+   - Windows tuşu + R → cmd yazın → Enter
+
+   Adım 3: Gerekli kütüphaneleri yükleyin
+   Komut İstemi'nde şu komutları sırayla çalıştırın:
+   
+   pip install requests
+   pip install pyinstaller
+
+   Adım 4: turkgpt-desktop.py dosyasının bulunduğu klasöre gidin
+   
+   cd C:\Users\YourUsername\Downloads  (dosyanın olduğu klasör)
+
+   Adım 5: EXE dosyasını oluşturun
+   
+   pyinstaller --onefile --windowed --name TurkGPT --icon=NONE turkgpt-desktop.py
+
+   Seçenekler:
+   --onefile      : Tek bir EXE dosyası oluşturur
+   --windowed     : Konsol penceresi olmadan çalışır
+   --name TurkGPT : EXE dosyasının adı
+
+   Adım 6: EXE dosyasını bulun
+   - Oluşturulan EXE dosyası "dist" klasöründe olacak
+   - dist\TurkGPT.exe
+
+3. EXE'Yİ ÇALIŞTIRMA:
+   - dist klasöründeki TurkGPT.exe dosyasını çift tıklayın
+   - Masaüstüne kopyalayıp kullanabilirsiniz
+
+--- HTML DOSYASINI KULLANMA ---
+
+1. turkgpt-standalone.html dosyasını herhangi bir web tarayıcısında açın
+   - Chrome, Firefox, Edge desteklenir
+   - Çift tıklayın veya sağ tık → "Birlikte Aç" → Tarayıcı seçin
+
+2. İnternet bağlantısı gereklidir (OpenAI API'ye erişim için)
+
+3. HTML dosyasını istediğiniz yere kopyalayabilirsiniz
+
+--- ÖNEMLİ NOTLAR ---
+
+⚠️ API ANAHTARI UYARISI:
+Bu dosyalarda kullanılan API anahtarı görünürdür. 
+Sadece kişisel kullanım içindir. 
+Paylaşmamanız önerilir.
+
+📝 SORUN GİDERME:
+
+- "Python bulunamadı" hatası:
+  → Python'u PATH'e ekleyin veya yeniden kurun
+
+- "pip komut bulunamadı" hatası:
+  → Python'u PATH'e ekleyin
+
+- EXE çalışmıyor:
+  → Windows Defender'ı kontrol edin
+  → Antivirüs'te izin verin
+
+- API hatası:
+  → İnternet bağlantınızı kontrol edin
+  → API anahtarının doğru olduğundan emin olun
+
+--- İLETİŞİM ---
+
+Sorularınız için:
+Geliştirici: Kadir Tolga Erdoğan
+Şirket: MaviGlobalSoft
+
+==============================================
