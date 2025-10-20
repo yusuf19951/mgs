@@ -32,9 +32,23 @@ class TurkGPT:
         self.root.geometry("800x600")
         self.root.configure(bg='#0f172a')
         
-        self.conversation_history = []
+        self.session_id = None
+        self.create_session()
         
         self.setup_ui()
+        
+    def create_session(self):
+        """Yeni oturum oluştur"""
+        try:
+            response = requests.post(f'{API_URL}/sessions', 
+                json={'title': 'Desktop Sohbet'},
+                timeout=10
+            )
+            if response.status_code == 200:
+                self.session_id = response.json()['id']
+                print(f"Oturum oluşturuldu: {self.session_id}")
+        except Exception as e:
+            print(f"Oturum oluşturulamadı: {e}")
         
     def setup_ui(self):
         # Başlık
