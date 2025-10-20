@@ -21,9 +21,9 @@ import json
 import threading
 from datetime import datetime
 
-# API Ayarları
-API_KEY = 'sk-emergent-16aCd061c3c5cB3783'
-API_URL = 'https://api.openai.com/v1/chat/completions'
+# API Ayarları - Backend'e bağlı, tamamen ücretsiz!
+BACKEND_URL = 'https://turkgpt-ai.preview.emergentagent.com'
+API_URL = f'{BACKEND_URL}/api'
 
 class TurkGPT:
     def __init__(self, root):
