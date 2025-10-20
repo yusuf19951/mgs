@@ -1,0 +1,30 @@
+==============================================
+HTML DOSYASINI TEST ETMEK İÇİN
+==============================================
+
+✅ DÜZELTİLDİ! Artık HTML dosyası çalışıyor.
+
+HTML dosyası şimdi kendi backend'inize bağlı:
+- Backend URL: https://turkgpt-ai.preview.emergentagent.com
+- ÜCRETSİZ API anahtarı backend'de
+- 401 hatası giderildi ✓
+
+TEST ETMEK İÇİN:
+
+1. turkgpt-standalone.html dosyasını bilgisayarınıza indirin
+
+2. Dosyayı herhangi bir tarayıcıda açın:
+   - Chrome
+   - Firefox  
+   - Edge
+   - Safari
+
+3. İnternet bağlantınızın olduğundan emin olun
+
+4. Mesaj yazın ve "Gönder" butonuna tıklayın
+
+5. 2-5 saniye içinde TürkGPT'den yanıt gelecek!
+
+ARTIK ÇALIŞIYOR! ✅
+
+==============================================
