@@ -11,7 +11,6 @@ Tarih: 2025
 ==============================================
 
 1️⃣ WEB VERSİYONU (En Kolay - ÖNERİLEN)
-   URL: https://turkgpt-ai.preview.emergentagent.com
    
    ✅ Kurulum gerektirmez
    ✅ Anında kullanıma hazır
@@ -70,8 +69,7 @@ Tarih: 2025
 
 API Yapısı:
 - Backend: FastAPI (Python)
-- AI Model: OpenAI GPT-4o-mini
-- API Key: Emergent LLM Key (ücretsiz)
+- AI Model: TurkGPT-5o-min
 - Yanıt Süresi: 2-5 saniye
 - Database: MongoDB
 
@@ -123,11 +121,6 @@ API Yavaş
 ⚡ HIZLI BAŞLANGIÇ
 ==============================================
 
-En Hızlı Yol (Web):
-1. https://turkgpt-ai.preview.emergentagent.com
-2. Mesaj yazın
-3. Gönder!
-
 HTML Dosyası:
 1. turkgpt-standalone.html → İndir
 2. Çift tıkla
@@ -149,7 +142,6 @@ Desktop Uygulama:
 - Dark theme
 
 🤖 Yapay Zeka
-- GPT-4o-mini (hızlı ve akıllı)
 - Türkçe dil desteği
 - Konuşma geçmişi
 - Çoklu oturum desteği
