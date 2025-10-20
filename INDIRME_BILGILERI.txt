@@ -1,0 +1,76 @@
+==============================================
+TÜRKGPT - İNDİRME BİLGİLERİ
+==============================================
+
+Geliştirici: Kadir Tolga Erdoğan - MaviGlobalSoft
+
+📦 HAZIR DOSYALAR:
+
+1. ✅ HTML VERSİYONU (Tarayıcıda Çalışır)
+   Dosya: turkgpt-standalone.html
+   Kullanım: Herhangi bir tarayıcıda çift tıklayın
+   İnternet: Gerekli (API çağrıları için)
+   Platform: Windows, Mac, Linux
+
+2. ✅ PYTHON DESKTOP UYGULAMASI
+   Dosya: turkgpt-desktop.py
+   Kullanım: python turkgpt-desktop.py
+   Gereksinimler: Python 3.8+, requests kütüphanesi
+   
+3. 🔧 EXE YAPMA TALİMATLARI
+   Dosya: EXE_YAPMA_TALIMATLARI.txt
+   İçerik: Adım adım Windows EXE oluşturma kılavuzu
+
+==============================================
+DOSYALARI NASIL İNDİREBİLİRSİNİZ?
+==============================================
+
+Şu anda çalışan sunucu üzerinde dosyalar hazır:
+
+📍 Dosya Konumları:
+   /app/turkgpt-standalone.html
+   /app/turkgpt-desktop.py
+   /app/EXE_YAPMA_TALIMATLARI.txt
+
+💡 İndirme Seçenekleri:
+
+1️⃣ EMERGENT PLATFORM ÜZERİNDEN:
+   - Emergent arayüzünden dosyaları indirebilirsiniz
+   - Sol menüden "Files" sekmesine gidin
+   - Dosyaları bulup download edin
+
+2️⃣ DOĞRUDAN KULLANIM:
+   - HTML: Tarayıcıda açın
+   - Python: Sunucuda çalıştırın
+
+==============================================
+HIZLI BAŞLANGIÇ
+==============================================
+
+🌐 HTML VERSİYONU:
+   1. turkgpt-standalone.html'i indirin
+   2. Çift tıklayın (tarayıcıda açılacak)
+   3. Kullanmaya başlayın!
+
+🖥️ DESKTOP VERSİYONU:
+   1. Python 3.8+ yükleyin
+   2. Terminal: pip install requests
+   3. Çalıştırın: python turkgpt-desktop.py
+
+📦 EXE YAPMA:
+   1. EXE_YAPMA_TALIMATLARI.txt'i okuyun
+   2. Adımları takip edin
+   3. TurkGPT.exe hazır!
+
+==============================================
+ÖNEMLİ UYARI
+==============================================
+
+⚠️ Bu dosyalarda OpenAI API anahtarı gömülüdür.
+   Sadece KİŞİSEL KULLANIM içindir.
+   Dosyaları herkese açık paylaşmayın.
+
+✅ Web versiyonu (https://turkgpt-ai.preview.emergentagent.com)
+   zaten çalışıyor ve kullanıma hazır!
+
+==============================================
