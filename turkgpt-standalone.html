@@ -289,15 +289,33 @@
     </div>
     
     <script>
-        // ÖNEMLİ: Bu API anahtarı herkese açık görünür. Sadece kişisel kullanım için!
-        const API_KEY = 'sk-emergent-16aCd061c3c5cB3783';
-        const API_URL = 'https://api.openai.com/v1/chat/completions';
+        // Backend API URL - Ücretsiz ve çalışıyor!
+        const BACKEND_URL = 'https://turkgpt-ai.preview.emergentagent.com';
+        const API_URL = `${BACKEND_URL}/api`;
         
         const messagesDiv = document.getElementById('messages');
         const messageInput = document.getElementById('messageInput');
         const sendBtn = document.getElementById('sendBtn');
         
-        let conversationHistory = [];
+        let currentSessionId = null;
+        
+        // Sayfa yüklendiğinde yeni oturum oluştur
+        window.addEventListener('load', async () => {
+            try {
+                const response = await fetch(`${API_URL}/sessions`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ title: 'HTML Sohbet' })
+                });
+                const data = await response.json();
+                currentSessionId = data.id;
+                console.log('Oturum oluşturuldu:', currentSessionId);
+            } catch (error) {
+                console.error('Oturum oluşturulamadı:', error);
+            }
+        });
         
         messageInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
