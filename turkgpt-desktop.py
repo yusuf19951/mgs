@@ -231,7 +231,8 @@ class TurkGPT:
         self.chat_area.config(state=tk.NORMAL)
         self.chat_area.delete(1.0, tk.END)
         self.chat_area.config(state=tk.DISABLED)
-        self.conversation_history = []
+        # Yeni oturum oluştur
+        self.create_session()
         self.add_system_message("Sohbet temizlendi. Yeni bir konuşma başlatabilirsiniz.")
 
 if __name__ == "__main__":
