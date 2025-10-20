@@ -1,0 +1,189 @@
+==============================================
+TÜRKGPT - KULLANIM KILAVUZU
+==============================================
+
+Geliştirici: Kadir Tolga Erdoğan
+Şirket: MaviGlobalSoft
+Tarih: 2025
+
+==============================================
+📦 HAZIR DOSYALAR VE KULLANIM
+==============================================
+
+1️⃣ WEB VERSİYONU (En Kolay - ÖNERİLEN)
+   URL: https://turkgpt-ai.preview.emergentagent.com
+   
+   ✅ Kurulum gerektirmez
+   ✅ Anında kullanıma hazır
+   ✅ Her cihazdan erişim
+   ✅ Tamamen ücretsiz
+   
+   Kullanım: Linke tıklayın, kullanmaya başlayın!
+
+---
+
+2️⃣ HTML VERSİYONU (Offline Kullanım)
+   Dosya: turkgpt-standalone.html
+   Boyut: 14 KB
+   
+   ✅ Tek dosya
+   ✅ Kurulum gerektirmez
+   ✅ Windows, Mac, Linux
+   ✅ Tamamen ücretsiz API
+   
+   Kullanım:
+   a) turkgpt-standalone.html'i indirin
+   b) Çift tıklayın (tarayıcıda açılır)
+   c) İnternet bağlantınızın olduğundan emin olun
+   d) Kullanmaya başlayın!
+   
+   Not: Backend'e bağlıdır, 401 hatası GİDERİLDİ ✓
+
+---
+
+3️⃣ PYTHON DESKTOP UYGULAMASI
+   Dosya: turkgpt-desktop.py
+   Boyut: 8.1 KB
+   
+   ✅ Şık GUI arayüz
+   ✅ EXE yapılabilir
+   ✅ Tamamen ücretsiz API
+   
+   Gereksinimler:
+   - Python 3.8+
+   - requests kütüphanesi
+   
+   Kurulum:
+   $ pip install requests
+   
+   Çalıştırma:
+   $ python turkgpt-desktop.py
+   
+   EXE Yapma:
+   $ pip install pyinstaller
+   $ pyinstaller --onefile --windowed --name TurkGPT turkgpt-desktop.py
+   $ dist/TurkGPT.exe dosyası oluşur
+
+==============================================
+🔧 TEKNİK DETAYLAR
+==============================================
+
+API Yapısı:
+- Backend: FastAPI (Python)
+- AI Model: OpenAI GPT-4o-mini
+- API Key: Emergent LLM Key (ücretsiz)
+- Yanıt Süresi: 2-5 saniye
+- Database: MongoDB
+
+Özellikler:
+✓ Çoklu sohbet oturumları
+✓ Mesaj geçmişi kaydetme
+✓ Türkçe dil desteği
+✓ Modern, animasyonlu UI
+✓ Responsive tasarım
+
+==============================================
+📥 DOSYA İNDİRME
+==============================================
+
+Emergent Platform'dan İndirme:
+1. Sol menüden "Files" sekmesine tıklayın
+2. /app/ klasörüne gidin
+3. İstediğiniz dosyaları indirin:
+   - turkgpt-standalone.html
+   - turkgpt-desktop.py
+   - EXE_YAPMA_TALIMATLARI.txt
+
+==============================================
+❓ SORUN GİDERME
+==============================================
+
+HTML: "401 API hatası"
+→ Düzeltildi! Yeni HTML dosyasını indirin
+→ İnternet bağlantınızı kontrol edin
+
+HTML: Çalışmıyor
+→ Modern tarayıcı kullanın (Chrome, Firefox, Edge)
+→ JavaScript'in etkin olduğundan emin olun
+→ Konsolu açın (F12) ve hataları kontrol edin
+
+Python Desktop: "Module not found"
+→ pip install requests
+→ Python 3.8+ yüklü olmalı
+
+EXE: Çalışmıyor
+→ Windows Defender'dan izin verin
+→ Antivirüs ayarlarını kontrol edin
+
+API Yavaş
+→ İnternet bağlantınızı kontrol edin
+→ Normal yanıt süresi: 2-5 saniye
+
+==============================================
+⚡ HIZLI BAŞLANGIÇ
+==============================================
+
+En Hızlı Yol (Web):
+1. https://turkgpt-ai.preview.emergentagent.com
+2. Mesaj yazın
+3. Gönder!
+
+HTML Dosyası:
+1. turkgpt-standalone.html → İndir
+2. Çift tıkla
+3. Kullan!
+
+Desktop Uygulama:
+1. Python yükle
+2. pip install requests
+3. python turkgpt-desktop.py
+
+==============================================
+🎨 ÖZELLİKLER
+==============================================
+
+✨ Modern Tasarım
+- Animasyonlu gradient arka plan
+- Smooth mesaj animasyonları
+- Responsive tasarım
+- Dark theme
+
+🤖 Yapay Zeka
+- GPT-4o-mini (hızlı ve akıllı)
+- Türkçe dil desteği
+- Konuşma geçmişi
+- Çoklu oturum desteği
+
+🔒 Güvenlik
+- Backend'de API key saklama
+- CORS koruması
+- Güvenli bağlantı (HTTPS)
+
+==============================================
+📞 DESTEK
+==============================================
+
+Geliştirici: Kadir Tolga Erdoğan
+Şirket: MaviGlobalSoft
+
+Sorularınız için:
+- Web versiyonunu kullanın (sorunsuz çalışır)
+- Belgeleri okuyun
+- Test edin ve geri bildirim verin
+
+==============================================
+✅ SONUÇ
+==============================================
+
+TürkGPT artık 3 farklı şekilde kullanılabilir:
+1. Web (En Kolay) ✓
+2. HTML (Taşınabilir) ✓
+3. Desktop (EXE Yapılabilir) ✓
+
+Hepsi TAMAMEN ÜCRETSİZ API ile çalışır!
+API anahtarı backend'de güvenli şekilde saklanır.
+
+İyi kullanımlar!
+Kadir Tolga Erdoğan - MaviGlobalSoft
+
+==============================================
