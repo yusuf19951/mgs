@@ -70,7 +70,4 @@ HIZLI BAŞLANGIÇ
    Sadece KİŞİSEL KULLANIM içindir.
    Dosyaları herkese açık paylaşmayın.
 
-✅ Web versiyonu (https://turkgpt-ai.preview.emergentagent.com)
-   zaten çalışıyor ve kullanıma hazır!
-
 ==============================================
